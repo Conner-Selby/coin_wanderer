@@ -48,6 +48,9 @@ namespace coinWanderer
   }
 
   void Board::start() {
+    /*
+    Prints the board & instructions. Commences the game input cycle.
+    */
     printInstructions();
     printBoard();
     while (makeMove()) {

@@ -29,6 +29,8 @@ The board also doesn't keep track of a lastCoin, middleCoin etc. pointer. These 
 
 The print function does not handle large coin stacks well (e.g. 10+ starts throwing the columns out of alignment). This could be improved with padding/formatting the columns dynamically. Although in real-world scenarios it is likely that such things would be displayed outside of a terminal-based-environment.
 
+The coin constructor could be overloaded with an argument for a next coin, this could be used to dynamically insert coins into the linked list, perhaps to increase game complexity / features.
+
 **Note:**
 
 If you have any advice on how I might have approached this differently or improved the design please feel free to reach out, I welcome constructive criticism.

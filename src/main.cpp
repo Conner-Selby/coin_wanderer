@@ -3,11 +3,10 @@
 #include "board.h"
 #include <iostream>
 
-int inputInt()
+int inputInt() {
 /*
 Used to take user inputs for the dynamic board size
 */
-{
     int x;
     std::cin >> x;
     while(std::cin.fail())
@@ -22,7 +21,10 @@ Used to take user inputs for the dynamic board size
     return x;
 }
 
-int main() {
+int main() { 
+    /*
+    Main - Runs the game from a external (public) class (Also requests dimension inputs to demonstrate the dynamic sizing capability of the class)
+    */
     std::cout << "Enter board Column dimension... (Default = 7)" << std::endl;
     int dimX = inputInt();
     std::cout << "Enter board Row dimension...    (Default = 5)" << std::endl;
